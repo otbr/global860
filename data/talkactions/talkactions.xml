@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talkactions>
 	<!-- Gods -->
+	<talkaction log="yes" access="5" words="/giveitem" event="script" value="giveitem.lua"/>
+	<talkaction log="yes" words="/additem" access="5" event="script" value="additem.lua"/>
 	<talkaction log="yes" words="/addskill" access="5" event="function" value="addSkill"/>
 	<talkaction log="yes" words="/attr" access="5" event="function" value="thingProporties"/>
 	<talkaction log="yes" words="/serverdiag" access="5" event="function" value="diagnostics"/>
@@ -54,7 +56,16 @@
 	<talkaction log="yes" words="/baninfo" access="1" event="function" value="banishmentInfo"/>
 	<talkaction log="yes" access="1" words="!pos" event="script" value="position.lua"/>
 
+	<!-- War System -->
+	<talkaction words="/war" channel="0" event="script" value="war.lua" desc="(Guild channel command) War management."/>
+	<talkaction words="/balance" channel="0" event="script" value="balance.lua" desc="(Guild channel command) Balance management."/>
+	
+	<!-- Cast System -->
+	<talkaction words="/cast;!cast" event="script" value="cast.lua"/>
+	
 	<!-- Players -->
+	<talkaction words="!offer" event="script" value="auctionsystem.lua"/>
+	<talkaction words="/reportbug" event="script" value="reportbugs.lua"/>
       <talkaction words="!spell" script="spells.lua" />
       <talkaction words="!spells" event="script" value="spellsinfo.lua"/>
       <talkaction words="!bless" event="script" value="bless.lua"/>

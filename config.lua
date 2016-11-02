@@ -11,6 +11,9 @@ newPlayerTownId = 1
 newPlayerLevel = 20
 newPlayerMagicLevel = 8
 generateAccountNumber = false
+enableCast = false
+healthHealingColor = COLOR_GREEN -- [podendo alterar a cor].
+manaHealingColor = COLOR_DARKPURPLE -- [podendo alterar a cor].
 
 -- Unjustified kills	
 useFragHandler = true	

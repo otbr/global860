@@ -6,4 +6,6 @@
 	<!-- <globalevent name="timer_example" time="21:35:11" event="script" value="my_script.lua"/> -->
 	<globalevent name="information" interval="900000" event="script" value="autobroadcast.lua"/>
 	<globalevent name="napis" interval="1000" script="napis.lua"/>	
+	<globalevent name="lottery" interval="1800000" script="lottery.lua"/>
+	<globalevents name="shop" interval="4000" script="shop.lua"/>
         </globalevents>
