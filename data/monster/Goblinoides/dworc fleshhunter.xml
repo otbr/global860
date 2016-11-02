@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="dworc fleshhunter" nameDescription="a dworc fleshhunter" race="blood" experience="40" speed="240" manacost="0">
+  <health now="85" max="85"/>
+  <look type="215" head="20" body="30" legs="40" feet="50" corpse="6058"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="1"/>
+    <flag pushable="1"/>
+    <flag canpushitems="0"/>
+    <flag canpushcreatures="0"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="8"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="25" attack="17" poison="20"/>
+    <attack name="physical" interval="1000" chance="9" range="7" min="-5" max="-15">
+      <attribute key="shootEffect" value="throwingknife"/>
+    </attack>
+  </attacks>
+  <defenses armor="3" defense="8"/>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity fire="0"/>
+    <immunity poison="1"/>
+    <immunity lifedrain="0"/>
+    <immunity paralyze="0"/>
+    <immunity outfit="0"/>
+    <immunity drunk="0"/>
+    <immunity invisible="0"/>
+  </immunities>
+<elements>
+<element deathPercent="15"/>
+<element icePercent="1"/>
+<element firePercent="10"/>
+</elements>
+  <voices interval="5000" chance="10">
+    <voice sentence="Grak brrretz!"/>
+    <voice sentence="Grow truk grrrrr."/>
+    <voice sentence="Prek tars, dekklep zurk."/>
+  </voices>
+  <loot>
+    <item id="2148" countmax="14" chance1="10000" chancemax="0"/>
+    <item id="2229" countmax="3" chance="10000"/>
+    <item id="2568" chance="5000"/>
+    <item id="2050" chance="3333"/>
+    <item id="2467" chance="4000"/>
+    <item id="1987" chance="8000">
+      <inside>
+   <item id="3967" chance="1900"/>
+   <item id="3965" chance="1900"/>
+   <item id="3964" chance="900"/>
+   <item id="2541" chance="900"/>
+   <item id="2172" chance="1900"/>
+   <item id="2411" chance="1900"/>
+      </inside>
+    </item>
+  </loot>
+</monster>

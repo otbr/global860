@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Death Blob" nameDescription="a death blob" race="undead" experience="300" speed="210" manacost="0">
+  <health now="320" max="320"/>
+  <look type="315" corpse="9963"/>
+  <targetchange interval="5000" chance="0"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="0"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="85"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="38" attack="43"/>
+    <attack name="physical" interval="2000" radius="3" chance="10" target="1" min="-35" max="-60" curse="52">
+    <attribute key="shootEffect" value="suddendeath"/>
+    <attibute key="areaEffect" value="poff"/>
+  </attack> 
+  </attacks>
+  <defenses armor="10" defense="10">
+  <defense name="healing" interval="1000" chance="7" min="20" max="75">
+  <attribute key="areaEffect" value="blueshimmer"/>
+  </defense>
+ </defenses>
+  <elements>
+	<element firePercent="+10"/>
+	<element physicalPercent="-30"/>
+	<element holyPercent="+10"/>
+	<element icePercent="-10"/>
+	<element energyPercent="+10"/>
+  </elements>
+  <summons maxSummons="2">
+    <summon name="Death Blob" interval="3000" chance="10"/>
+  </summons>
+  <voices interval="5000" chance="10"/>
+  <loot>
+	<item id="9968" countmax="1" chance="18000" chancemax="0"/> --Glob of Tar
+  </loot>
+</monster>

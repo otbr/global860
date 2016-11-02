@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<monster name="Goblin Assassin" nameDescription="a goblin assassin" race="blood" experience="52" speed="220" manacost="360">
+	<health now="75" max="75"/>
+	<look type="296" corpse="6002"/>
+	<targetchange interval="10000" chance="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="1"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="15"/>
+	</flags>
+ 
+	<attacks>
+		<attack name="melee" interval="2000" max="-15"/>
+		<attack name="drunk" interval="5000" chance="15" duration="10000">
+			<attribute key="areaEffect" value="poison"/>
+			<attriubte key="shootEffect" value="poison"/>
+		</attack>
+		<attack name="physical" interval="1000" chance="9" range="6" min="-15" max="-25">
+			<attribute key="shootEffect" value="throwingknife"/>
+		</attack>
+	</attacks>
+ 
+	<defenses armor="15" defense="15">
+		<defense name="invisible" interval="7500" chance="10" duration="5000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+ 
+	<elements>
+		<element energyPercent="-20"/>
+		<element earthPercent="10"/>
+		<element holyPercent="-1"/>
+		<element deathPercent="1"/>
+	</elements>
+ 
+	<voices interval="5000" chance="10">
+		<voice sentence="Goblin Powahhh!"/>
+                                     <voice sentence="Me kill you!"/>
+                                     <voice sentence="Me green menace!"/>
+                                     <voice sentence="Gobabunga!"/>
+                                     <voice sentence="Gooobliiiins!"/>
+	</voices>
+ 
+	<loot>
+    <item id="2467" chance="7350" />
+    <item id="2148" countmax="9" chance="28050" />
+    <item id="2230" chance="8725" />
+    <item id="2235" chance="10100" />
+    <item id="2406" chance="11450" />
+   <item id="12495" chance="12530" />
+    <item id="2379" chance="23800" />
+    <item id="1987" chance="100000">
+        <inside>
+            <item id="1294" countmax="3" chance="3700" />
+            <item id="2667" chance="11450" />
+            <item id="2559" chance="15575" />
+            <item id="2449" chance="3250" />
+            <item id="2461" chance="7350" />
+        </inside>
+    </item>
+</loot>
+</monster>
+

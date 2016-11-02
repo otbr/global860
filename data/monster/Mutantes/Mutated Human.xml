@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Mutated Human" nameDescription="an mutated human" race="undead" experience="150" species="earth" speed="180" manacost="0">
+<health now="1400" max="1400"/>
+<look type="323" corpse="5527"/>
+<targetchange interval="60000" chance="0"/>
+<strategy attack="100" defense="0"/>
+<flags>
+<flag summonable="0"/>
+<flag attackable="1"/>
+<flag hostile="1"/>
+<flag illusionable="0"/>
+<flag convinceable="0"/>
+<flag pushable="0"/>
+<flag canpushitems="1"/>
+<flag staticattack="50"/>
+<flag lightlevel="0"/>
+<flag lightcolor="0"/>
+<flag targetdistance="1"/>
+<flag runonhealth="1"/>
+</flags>
+<attacks>
+<attack name="melee" interval="2000" skill="70" attack="65"/>
+<attack name="physical" interval="2000" chance="15" range="7" min="0" max="-220">
+<attribute key="shootEffect" value="largerock"/>
+</attack>
+<attack name="poisoncondition" interval="1000" chance="10" length="5" spread="0" min="0" max="-10">
+<attribute key="areaEffect" value="smallplants"/>
+</attack>
+<attack name="poisoncondition" interval="1000" chance="8" radius="2" target="0" min="0" max="-20">
+<attribute key="areaEffect" value="bigplants"/>
+</attack>
+<attack name="speed" interval="2000" chance="11" range="7" speedchange="-450" duration="4000">
+<attribute key="areaEffect" value="redshimmer"/>
+</attack>
+</attacks>
+<defenses armor="17" defense="18"/>
+<elements>
+<element icePercent="-20"/>
+<element holyPercent="25"/>
+</elements>
+<immunities>
+<immunity paralyze="1"/>
+<immunity invisible="1"/>
+<immunity earth="1"/>
+<immunity energy="1"/>
+</immunities>
+<voices interval="2000" chance="5">
+<voice sentence="Take that creature off my back!! I can fell it!"/>
+<voice sentence="HEEEEEEEEEELP!"/>
+<voice sentence="You will be the next infected one... GRAAAAAAAAARRR!"/>
+<voice sentence="Science... is a curse."/>
+<voice sentence="Run as fast as you can."/>
+<voice sentence="Oh by the gods! What is this... aaaaaargh!"/>
+</voices>
+<loot>
+<item id="2148" countmax="100" chance1="10000" chancemax="0"/>
+<item id="3976" countmax="3" chance1="100000" chancemax="0"/>
+<item id="2696" chance="10000"/>
+<item id="2226" chance="10000"/>
+<item id="2406" chance="10000"/>
+<item id="2376" chance="5000"/>
+<item id="2484" chance="9000"/>
+<item id="2801" chance="1800"/>
+<item id="1987" chance="100000">
+<inside>
+<item id="2161" chance="1800"/>
+<item id="2671" chance="900"/>
+<item id="7910" chance="900"/>
+<item id="2170" chance="500"/>
+</inside>
+</item>
+</loot>
+</monster> 

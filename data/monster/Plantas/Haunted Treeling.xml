@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Haunted Treeling" nameDescription="an Haunted Treeling" race="undead" experience="310" species="earth" speed="180" manacost="0">
+<health now="450" max="450"/>
+<look type="310" corpse="5527"/>
+<targetchange interval="60000" chance="0"/>
+<strategy attack="100" defense="0"/>
+<flags>
+<flag summonable="0"/>
+<flag attackable="1"/>
+<flag hostile="1"/>
+<flag illusionable="0"/>
+<flag convinceable="0"/>
+<flag pushable="0"/>
+<flag canpushitems="1"/>
+<flag staticattack="50"/>
+<flag lightlevel="0"/>
+<flag lightcolor="0"/>
+<flag targetdistance="1"/>
+<flag runonhealth="1"/>
+</flags>
+<attacks>
+<attack name="melee" interval="2000" skill="70" attack="65"/>
+<attack name="physical" interval="2000" chance="15" range="7" min="0" max="-150">
+<attribute key="shootEffect" value="largerock"/>
+</attack>
+<attack name="poisoncondition" interval="1000" chance="10" length="5" spread="0" min="0" max="-100">
+<attribute key="areaEffect" value="smallplants"/>
+</attack>
+<attack name="poisoncondition" interval="1000" chance="8" radius="2" target="0" min="0" max="-200">
+<attribute key="areaEffect" value="bigplants"/>
+</attack>
+<attack name="speed" interval="2000" chance="11" range="7" speedchange="-450" duration="4000">
+<attribute key="areaEffect" value="redshimmer"/>
+</attack>
+<attack name="manadrain" interval="2000" chance="10" radius="3" range="2" min="-9" max="-100">
+<attribute key="areaEffect" value="blueshimmer"/>
+</attack>
+</attacks>
+<defenses armor="17" defense="18"/>
+<elements>
+<element deathPercent="-1"/>
+<element icePercent="-10"/>
+<element holyPercent="-20"/>
+<element firePercent="+5"/>
+</elements>
+<immunities>
+<immunity paralyze="1"/>
+<immunity invisible="1"/>
+<immunity earth="1"/>
+<immunity energy="1"/>
+</immunities>
+<voices interval="2000" chance="5">
+</voices>
+<loot>
+<item id="2148" countmax="50" chance1="10000" chancemax="0"/>
+<item id="2148" countmax="46" chance1="10000" chancemax="0"/>
+<item id="2787" countmax="2" chance1="50000"/>
+<item id="1987" chance="70000">
+<inside>
+        <item id="2788" chance="60000"/>
+        <item id="2790" chance="60000"/>
+        <item id="7618" chance="70000"/>
+        <item id="7588" chance="3000"/>
+        <item id="2253" chance="100000"/>
+        <item id="2149" chance="5000"/>
+        <item id="2213" chance="1000"/>
+        <item id="7443" chance="200"/>
+</inside>
+</item>
+</loot>
+</monster> 

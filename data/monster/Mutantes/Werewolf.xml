@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Werewolf" nameDescription="a Werewolf" race="blood" experience="1450" speed="250" manacost="0">
+<health now="1955" max="1955"/>
+<look type="308" corpse="5527"/>
+<targetchange interval="5000" chance="8"/>
+<strategy attack="100" defense="0"/>
+<flags>
+<flag summonable="0"/>
+<flag attackable="1"/>
+<flag hostile="1"/>
+<flag illusionable="1"/>
+<flag convinceable="0"/>
+<flag pushable="0"/>
+<flag canpushitems="1"/>
+<flag canpushcreatures="1"/>
+<flag targetdistance="1"/>
+<flag staticattack="90"/>
+<flag runonhealth="30"/>
+</flags>
+<attacks>
+<attack name="melee" interval="2000" min="-0" max="-450"/>
+<attack name="physical" interval="3000" chance="17" range="7" min="-60" max="-189">
+<attribute key="shootEffect" value="throwingknife"/>
+</attack>
+<attack name="physical" interval="3000" chance="17" length="4" spread="3" min="-0" max="-0">
+<attribute key="areaEffect" value="purplenote"/>
+</attack>
+</attacks>
+<defenses armor="25" defense="35">
+<defense name="healing" interval="1000" chance="50" min="75" max="125">
+<attribute key="areaEffect" value="blueshimmer"/>
+</defense>
+</defenses>
+<elements>
+<element firePercent="5"/>
+<element earthPercent="-5"/>
+<element energyPercent="-5"/>
+<element deathPercent="-1"/>
+<element icePercent="5"/>
+<element holyPercent="1"/>
+<element physicalPercent="-1"/>
+</elements>
+<immunities>
+<immunity invisible="1"/>
+</immunities>
+<voices interval="3000" chance="30">
+  <voice sentence="HRAAAAAAAAAARRRRRR!" yell="1"/>
+    <voice sentence="BLOOD!" yell="1"/>
+</voices>
+<loot>
+<item id="2148" countmax="76" chance1="10000" chancemax="0"/> <!-- Gold Coins -->
+<item id="2671" countmax="5" chance1="33333" chancemax="0"/> <!-- Hams -->
+<item id="2169" chance="2066"/> <!-- time Ring -->
+<item id="2398" chance="6000"/> <!-- mace -->
+<item id="2510" chance="6000"/> 
+<item id="2381" chance="1900"/>
+<item id="2438" chance="1000"/>
+<item id="2805" chance="1900"/>
+<item id="2197" chance="1900"/>
+<item id="1987" chance="100000"> <!-- Bag -->
+<inside>
+<item id="6500" countmax="3" chance1="4555" chancemax="0"/> <!-- Concentrated Demonic Blood -->
+<item id="7439" chance="1800"/> 
+<item id="7419" chance="1000"/> 
+<item id="7383" chance="1000"/> 
+<item id="2171" chance="1000"/> 
+<item id="7588" chance="1800"/> 
+<item id="8473" chance="1800"/> 
+</inside>
+</item>
+</loot>
+</monster> 

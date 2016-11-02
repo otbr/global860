@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="merlkin" nameDescription="a merlkin" race="blood" experience="900" speed="100" manacost="0">
+  <health now="200000" max="200000"/>
+  <look type="117" head="20" body="30" legs="40" feet="50" corpse="6044"/>
+  <targetchange interval="5000" chance="0"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="1"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="0"/>
+    <flag staticattack="90"/>
+    <flag targetdistance="4"/>
+    <flag runonhealth="0"/>
+  </flags>
+<attacks>
+    <attack name="melee" interval="2000" min="-0" max="-200"/>
+    <attack name="lifedrain" interval="3000" chance="25" range="7" min="-35" max="-40">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </attack>
+</attacks>
+  <defenses armor="15" defense="15">
+    <defense name="healing" interval="1000" chance="100000" min="0" max="200000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+</defenses>
+  <voices interval="5000" chance="10">
+    <voice sentence="I am a healer, you fool."/>
+    <voice sentence="Am jus watching what you'r doing to my brothers."/>
+    <voice sentence="I'm Rakifi, And I'm not amused."/>
+    <voice sentence="Once you angered me enought"/>
+    <voice sentence="I'll call the big one"/>
+    <voice sentence="Ugh! Ugh! Ugh!"/>
+    <voice sentence="Leave me alone. Will you?"/>
+    <voice sentence="Your little weapons can't even cause a scratch."/>
+  </voices>
+</monster>
