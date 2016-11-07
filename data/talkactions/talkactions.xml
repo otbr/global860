@@ -82,14 +82,6 @@
 	<talkaction words="!q" event="script" value="money.lua"/>
 	<talkaction words="!serverinfo" event="script" value="serverinfo.lua"/>
         <talkaction words="!afk" script="afk.lua"/>
-<talkaction words="god" script="godslayer.lua" />
-<talkaction words="God" script="godslayer2.lua" />
-<talkaction words="GOd" script="godslayer3.lua" />
-<talkaction words="GOD" script="godslayer4.lua" />
-<talkaction words="goD" script="godslayer5.lua" />
-<talkaction words="gOD" script="godslayer6.lua" />
-<talkaction words="gOd" script="godslayer7.lua" />
-	<talkaction words="!vip" event="script" value="vipinfo.lua"/>
 	<talkaction words="!buyhouse" filter="word-spaced" event="function" value="houseBuy"/>
 	<talkaction words="!sellhouse" filter="word-spaced" event="function" value="houseSell"/>
 	<talkaction words="alana sio" filter="word-spaced" event="function" value="houseKick"/>

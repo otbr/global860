@@ -2,7 +2,7 @@
 <mod name="Buy premium command" version="1.0" author="Dener Diegoli" contact="dener_d1@hotmail.com" enabled="yes">
 	<config name="buypremium_config"><![CDATA[
 		config = {
-			days = 90,
+			days = 7,
 			cost = 10000,
 			maxDays = 360
 		}
