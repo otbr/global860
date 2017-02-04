@@ -79,7 +79,6 @@
 <item id="7591" chance="9800"/> --GHP 
 <item id="1987" chance="100000"> --bag 
 <inside>     
-<item id="7440" chance="7000"/> --mastermind potion 
 <item id="2127" chance="14400"/> --emerald bangle 
 <item id="9810" chance="5800"/> --rusty armor :rare: 
 <item id="2528" chance="4000"/> --tower shield 

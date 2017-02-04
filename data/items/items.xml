@@ -12235,9 +12235,8 @@
 		<attribute key="weight" value="200" />
 		<attribute key="description" value="Drinking this potion increases temporarily your fighting skill while decreasing your defense." />
 	</item>
-	<item id="7440" article="a" name="mastermind potion">
+	<item id="7440" article="a" name="Autoloot Potion">
 		<attribute key="weight" value="200" />
-		<attribute key="description" value="Drinking this is said to increase your magical skills for a while, but to decrease your defense." />
 	</item>
 	<item id="7441" article="an" name="ice cube">
 		<attribute key="weight" value="1000" />
