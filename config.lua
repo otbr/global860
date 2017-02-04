@@ -107,7 +107,7 @@ sqlFile = "realserver.sql"
 sqlKeepAlive = 0
 mysqlReadTimeout = 10
 mysqlWriteTimeout = 10
-encryptionType = "sha1"	
+encryptionType = "plain"	
 
 -- Deathlist	
 deathListEnabled = false	

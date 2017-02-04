@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tempo de Geração: Nov 07, 2016 as 09:35 
+-- Tempo de Geração: Fev 04, 2017 as 03:53 
 -- Versão do Servidor: 5.1.41
 -- Versão do PHP: 5.3.1
 
@@ -38,6 +38,7 @@ CREATE TABLE IF NOT EXISTS `accounts` (
   `warnings` int(11) NOT NULL DEFAULT '0',
   `group_id` int(11) NOT NULL DEFAULT '1',
   `vip_time` int(11) NOT NULL DEFAULT '0',
+  `loot_time` int(15) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
@@ -46,8 +47,8 @@ CREATE TABLE IF NOT EXISTS `accounts` (
 -- Extraindo dados da tabela `accounts`
 --
 
-INSERT INTO `accounts` (`id`, `name`, `password`, `salt`, `premdays`, `lastday`, `email`, `key`, `blocked`, `warnings`, `group_id`, `vip_time`) VALUES
-(1, '1', '1', '', 65535, 0, '', '0', 0, 0, 1, 0);
+INSERT INTO `accounts` (`id`, `name`, `password`, `salt`, `premdays`, `lastday`, `email`, `key`, `blocked`, `warnings`, `group_id`, `vip_time`, `loot_time`) VALUES
+(1, '1', '1', '', 65535, 0, '', '0', 0, 0, 1, 0, 0);
 
 --
 -- Gatilhos `accounts`
